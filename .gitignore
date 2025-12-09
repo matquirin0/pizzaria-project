@@ -1,0 +1,27 @@
+# Arquivos de projeto do Eclipse
+.project
+.classpath
+.settings/
+
+# Diretórios de saída da compilação
+bin/
+target/
+
+# Arquivos temporários e de cache
+*.tmp
+*.bak
+*.swp
+*.class # Ignora arquivos .class soltos, embora a pasta bin/ ou target/ já cubra a maioria
+.metadata
+.recommenders/
+.loadpath
+
+# Configurações de execução locais (Launch configurations)
+*.launch
+
+# Específicos do Maven (caso não use a pasta target/)
+pom.xml.tag
+pom.xml.next
+pom.xml.orig
+pom.xml.releaseBackup
+release.properties

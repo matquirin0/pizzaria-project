@@ -1,0 +1,13 @@
+package br.com_mpq.gerenciador_pedidos;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class GerenciadorDePedidosApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(GerenciadorDePedidosApplication.class, args);
+	}
+
+}
