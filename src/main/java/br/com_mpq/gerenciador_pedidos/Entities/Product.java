@@ -1,5 +1,6 @@
 package br.com_mpq.gerenciador_pedidos.Entities;
 
+import br.com_mpq.gerenciador_pedidos.Entities.enums.Category;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,7 @@ import java.math.BigDecimal;
 public class Product {
     private int idProduct;
     private String name;
-    private String category;
+    private Category category;
     private String description;
     private BigDecimal price;
 }
