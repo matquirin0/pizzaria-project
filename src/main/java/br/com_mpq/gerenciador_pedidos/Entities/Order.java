@@ -1,6 +1,9 @@
 package br.com_mpq.gerenciador_pedidos.Entities;
 
 import java.util.List;
+
+import br.com_mpq.gerenciador_pedidos.Entities.enums.PaymentMethod;
+import br.com_mpq.gerenciador_pedidos.Entities.enums.StatusOrder;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
