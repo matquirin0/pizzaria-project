@@ -1,5 +1,7 @@
 package br.com_mpq.gerenciador_pedidos.Entities;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,6 +11,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class Adm {
-    private Long PIN;
+    private Long PIN = 00001L;
 }

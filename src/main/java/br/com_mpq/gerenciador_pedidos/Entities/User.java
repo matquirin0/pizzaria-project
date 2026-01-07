@@ -1,5 +1,6 @@
 package br.com_mpq.gerenciador_pedidos.Entities;
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,8 +10,13 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+
+@Entity
+@Table(name = "tb_user")
 public class User {
-    private Long idUser;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long CPF;
     private String nome;
     private String cellphone;
     private String email;

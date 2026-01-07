@@ -4,6 +4,8 @@ import java.util.List;
 
 import br.com_mpq.gerenciador_pedidos.Entities.enums.PaymentMethod;
 import br.com_mpq.gerenciador_pedidos.Entities.enums.StatusOrder;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,9 +17,18 @@ import java.util.Date;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+
+@Entity
+@Table(name="tb_order")
 public class Order {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idOrder;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "order")
     private List<OrderItem> order;
+
     private BigDecimal price;
     private StatusOrder statusOrder;
     private PaymentMethod statusPayment;
