@@ -1,9 +1,8 @@
-package br.com_mpq.gerenciador_pedidos.Entities;
+package br.com_mpq.gerenciador_pedidos.domain.order;
 
 import java.util.List;
 
-import br.com_mpq.gerenciador_pedidos.Entities.enums.PaymentMethod;
-import br.com_mpq.gerenciador_pedidos.Entities.enums.StatusOrder;
+import br.com_mpq.gerenciador_pedidos.domain.orderItem.OrderItem;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -23,7 +22,7 @@ import java.util.Date;
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long idOrder;
+    private Long idOrder;D
 
     @JsonIgnore
     @OneToMany(mappedBy = "order")

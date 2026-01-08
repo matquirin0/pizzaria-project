@@ -1,4 +1,4 @@
-package br.com_mpq.gerenciador_pedidos.Entities.enums;
+package br.com_mpq.gerenciador_pedidos.domain.order;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

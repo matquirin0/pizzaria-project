@@ -1,6 +1,7 @@
-package br.com_mpq.gerenciador_pedidos.Entities;
+package br.com_mpq.gerenciador_pedidos.domain.product;
 
-import br.com_mpq.gerenciador_pedidos.Entities.enums.Category;
+import br.com_mpq.gerenciador_pedidos.domain.orderItem.Category;
+import br.com_mpq.gerenciador_pedidos.domain.orderItem.OrderItem;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

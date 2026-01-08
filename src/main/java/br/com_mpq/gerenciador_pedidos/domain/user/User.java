@@ -1,4 +1,4 @@
-package br.com_mpq.gerenciador_pedidos.Entities;
+package br.com_mpq.gerenciador_pedidos.domain.user;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

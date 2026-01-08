@@ -1,5 +1,7 @@
-package br.com_mpq.gerenciador_pedidos.Entities;
+package br.com_mpq.gerenciador_pedidos.domain.orderItem;
 
+import br.com_mpq.gerenciador_pedidos.domain.product.Product;
+import br.com_mpq.gerenciador_pedidos.domain.order.Order;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
