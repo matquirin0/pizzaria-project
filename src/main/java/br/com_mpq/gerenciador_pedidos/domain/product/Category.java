@@ -1,14 +1,14 @@
-package br.com_mpq.gerenciador_pedidos.domain.orderItem;
+package br.com_mpq.gerenciador_pedidos.domain.product;
 
+import br.com_mpq.gerenciador_pedidos.domain.order.StatusOrder;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
 public enum Category {
-    DRINK(1),
-    FOOD(2),
-    ADD_ON(3);
+    FOOD(1),
+    DRINK(2);
 
     private int code;
 
@@ -18,6 +18,6 @@ public enum Category {
                 return value;
             }
         }
-        throw new IllegalArgumentException("Invalid Category code");
+        throw new IllegalArgumentException("Invalid StatusOrder code");
     }
 }
