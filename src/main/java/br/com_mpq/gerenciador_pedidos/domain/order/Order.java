@@ -22,7 +22,7 @@ import java.util.Date;
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long idOrder;D
+    private Long idOrder;
 
     @JsonIgnore
     @OneToMany(mappedBy = "order")
