@@ -3,6 +3,7 @@ package br.com_mpq.gerenciador_pedidos.domain.order;
 import java.util.List;
 
 import br.com_mpq.gerenciador_pedidos.domain.orderItem.OrderItem;
+import br.com_mpq.gerenciador_pedidos.domain.user.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -27,6 +28,10 @@ public class Order {
     @JsonIgnore
     @OneToMany(mappedBy = "order")
     private List<OrderItem> order;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "user_cpf", nullable = false)
+    private User client;
 
     private BigDecimal price;
     private StatusOrder statusOrder;
