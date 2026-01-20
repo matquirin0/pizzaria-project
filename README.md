@@ -4,6 +4,12 @@ API desenvolvida para o gerenciamento de pedidos de uma pizzaria. O objetivo é 
 
 Este projeto faz parte do meu portfólio pessoal e está em constante evolução.
 
+## 📐 Modelagem do Sistema
+Antes do desenvolvimento, o sistema foi estruturado utilizando UML.
+Você pode visualizar o **Diagrama de Classes completo** clicando no link abaixo:
+
+📄 [Ver Diagrama de Classes (PDF)](src/main/resources/docs/diagramaPizzaria.pdf)
+
 ## 🚀 Tecnologias Utilizadas
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
