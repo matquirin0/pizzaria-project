@@ -17,7 +17,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long CPF;
-    private String nome;
+    private String name;
     private String cellphone;
     private String email;
     private String password;
