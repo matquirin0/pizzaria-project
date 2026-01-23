@@ -16,9 +16,20 @@ import lombok.Setter;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long CPF;
+    private Long idUser;
+    private String CPF;
     private String name;
     private String cellphone;
     private String email;
     private String password;
+
+
+//DTO -> Entidade
+public User(UserRequestDTO dto) {
+    this.CPF = dto.CPF();
+    this.name = dto.name();
+    this.cellphone = dto.cellphone();
+    this.email = dto.email();
+    this.password = dto.password();
+    }
 }
